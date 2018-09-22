@@ -71,22 +71,24 @@ body {
   opacity: 0;
 }
 .messages .message.left .avatar {
-  background-color: #f5886e;
+  background-image: url("robot.png");
+  background-color: #fff;
   float: left;
 }
 .messages .message.left .text_wrapper {
-  background-color: #ffe6cb;
+  background-color: #b2e7bb;
   margin-left: 20px;
 }
 .messages .message.left .text_wrapper::after, .messages .message.left .text_wrapper::before {
   right: 100%;
-  border-right-color: #ffe6cb;
+  border-right-color: #b2e7bb;
 }
 .messages .message.left .text {
-  color: #c48843;
+  color: #0e0c0a;
 }
 .messages .message.right .avatar {
-  background-color: #fdbf68;
+  background-image: url("me.png");
+  background-color: #fff;
   float: right;
 }
 .messages .message.right .text_wrapper {
@@ -171,8 +173,8 @@ body {
   height: 50px;
   display: inline-block;
   border-radius: 50px;
-  background-color: #a3d063;
-  border: 2px solid #a3d063;
+  background-color: #2999c5;
+  border: 2px solid #2999c5;
   color: #fff;
   cursor: pointer;
   transition: all 0.2s linear;
@@ -180,7 +182,7 @@ body {
   float: right;
 }
 .bottom_wrapper .send_message:hover {
-  color: #a3d063;
+  color: #2999c5;
   background-color: #fff;
 }
 .bottom_wrapper .send_message .text {
