@@ -37,7 +37,7 @@ def chat():
             return jsonify({"status":"success","response":"I'm sorry. Let me redirect you to a real person..."})
 
         if user_message.lower() in ['hi', 'hey', 'hello']:
-            return jsonify({"status":"success","response":"Welcome to Headout! I'm your customer service chatbot. If I failed to answer your question, please type 'BADBOT' to redirect to our agent."})
+            return jsonify({"status":"success","response":"Welcome to Headout! I'm Frost, your customer service chatbot. If I failed to answer your question, please type 'BADBOT' to redirect to our agent."})
 
 
 #         Predict query
