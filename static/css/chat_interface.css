@@ -75,6 +75,7 @@
   background-color: #b2e7bb;
   margin-left: 20px;
   text-align: left;
+  font-family: "Arial";
 }
 .messages .message.left .text_wrapper::after, .messages .message.left .text_wrapper::before {
   right: 100%;
@@ -92,6 +93,7 @@
   background-color: #c7eafc;
   margin-right: 20px;
   text-align: left;
+  font-family: "Arial";
   float: right;
 }
 .messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
@@ -156,6 +158,7 @@
   width: calc(100% - 160px);
   position: relative;
   padding: 0 20px;
+  font-family: "Arial";
 }
 .bottom_wrapper .message_input_wrapper .message_input {
   border: none;
@@ -177,6 +180,7 @@
   cursor: pointer;
   transition: all 0.2s linear;
   text-align: center;
+  font-family: "Arial";
   float: right;
 }
 .bottom_wrapper .send_message:hover {

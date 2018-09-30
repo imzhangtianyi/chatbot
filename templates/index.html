@@ -2,17 +2,6 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <meta property="og:title" content="Flash Response" />
-    <meta property="og:description" content="An NLP powered reply engine for faster customer service." />
-    <meta property="og:url" content="http://flashresponse.live" />
-    <meta property="og:image" content="static/img/flashresponse-home.jpg" />
-
     <title>Forst - A Chatbot for Customer Service</title>
 
     <!-- Bootstrap core CSS -->
@@ -24,8 +13,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <!-- Plugin CSS -->
-    <link href="static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="static/css/creative.min.css" rel="stylesheet">
@@ -50,14 +37,11 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#demo">How it works</a>
-            </li>
-            <!--
+            
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#project">About The Project</a>
             </li>
-            -->
+           
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#aboutme">About Me</a>
             </li>
@@ -102,110 +86,6 @@
 
 
 
-    <section class="bg-info" id="demo">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h3 class="section-heading text-white">Please scroll down to start your first conversation with an airline customer service agent!</h3>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Instruction: first input a question as a customer, then act as an agent to select a response or send link suggestions.</p>
-          </div>
-        </div>
-        <!-- main content -->
-        <div class="row">
-
-          <!--left panel-->
-          <div class='col-lg-6' id='left_panel' name='left_panel'>
-            <!-- top left -->
-            <div class="card card-primary">
-              <div class="card-header">Chat Area</div>
-              <div class="card-block col-lg-12" id='top_left_body' name='top_left_body'
-                style="min-height: 450px; max-height: 450px; overflow-y: scroll;"></div>
-            </div>
-            <!-- end of top left -->
-
-            <br>
-            <!-- bottom left -->
-            <div class="form-group">
-              <form class="form-signin" name="customer_question_form" id="customer_question_form" 
-                  action="/index" method="post" role="form">
-                <div class="row">
-                  <div class="form-group col-md-10">
-                    <textarea class="form-control" id="customer_question"
-                      name="customer_question" rows="3"
-                      placeholder="Customer: please type your question here. (To an airline customer service agent)"></textarea>
-                  </div>
-                  <div class="form-group col-md-2">
-                      <button type="button" id="customer_question_send_btn"
-                          name="customer_question_send_btn" class="btn btn-primary">Send</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- end of bottom left -->
-
-          </div>
-          <!-- end of left panel -->
-
-
-          <!--right panel-->
-          <div class='col-lg-6' id='right_panel' name='right_panel'>
-            <!-- top right -->
-            <div class="card card-primary">
-              <div class="card-header">Response Engine</div>
-              <div class="card-block" id='top_right_body' name='top_right_body' style="min-height: 450px; max-height: 450px; overflow-y: scroll; font-size: 14px;">
-                <!-- response candidates -->
-                <div class="container">
-                  <!--<h3>Possible Responses</h3>-->
-                  <form name='agent_reply_form' id='agent_reply_form' action="">
-                    <div name="agent_reply_title" id="agent_reply_title"></div>
-                    <div class="radio col-lg-12" name='agent_reply_radio' id='agent_reply_radio'></div>
-                  </form>
-                </div>
-
-
-                <!-- possible topics / tags -->
-                <div class="container" id="question_tags" name="question_tags" style="display: none;">
-                  <div class="row">
-                    <div class="col-md-8"><br><h5>Or suggest following links<h5></div>
-                    <div class="col-md-2"><br>
-                      <button type="button" id="agent_reply_link_btn" name="agent_reply_link_btn"
-                              class="btn btn-primary">Send Links</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="container" id="question_tags_reply" name="question_tags_reply">
-                  
-                </div>
-
-              </div>
-            </div><!-- end of top right -->
-
-            <br>
-            <!-- bottom right -->
-            <div class="form-group">
-              <div class="row">
-                <div class="form-group col-md-10">
-                  <textarea class="form-control" id="agent_reply" name="agent_reply"
-                    rows="3" placeholder="Agent: please type your reply here."></textarea>
-                </div>
-                <div class="form-group col-md-2">
-                  <button type="button" id="agent_reply_btn" name="agent_reply_btn"
-                    class="btn btn-primary">Reply</button>
-                </div>
-              </div>
-            </div>
-            <!-- end of bottom right -->
-
-          </div>
-          <!-- end of right panel -->
-        </div>
-        <!-- end of main container -->
-
-      </div>
-    </section>
-
-<!--
     <section id="project">
       <div class="container">
         <div class="row">
@@ -216,7 +96,7 @@
         </div>
       </div>
     </section>
--->
+
 
     <section id="aboutme">
       <div class="container">
@@ -224,21 +104,21 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">About Me</h2>
             <hr class="my-4">
-            <p class="mb-3">Hi! My name is Xiaolu Jiang. I am currently a fellow at Insight Data Science. I got my Ph.D. at Peking University and am pursuing a M.S. in Computer Science at Georgia Tech. I love coding and enjoy trying various ideas to real-world problem using scientific methods.</p>
-            <p class="mb-5">I always want to find the truth of data and build exciting data products.</p>
+            <p class="mb-3">My name is Tianyi Zhang. I am currently a data science fellow at Insight Data Science. I just got my Ph.D. in physical oceanography at the University of South Carolina. My research work focused on numerical modeling and I used machine learning to classify tidal waves.</p>
+            <p class="mb-5">I want to apply my predictive modling skills on data.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-github fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="https://github.com/xljiang">GitHub</a>
+              <a href="https://github.com/imzhangtianyi">GitHub</a>
             </p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-linkedin fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="https://www.linkedin.com/in/xljiang/">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/imzhangtianyi/">LinkedIn</a>
             </p>
           </div>
         </div>
@@ -255,10 +135,9 @@
     <script src="static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename="js/bind.js") }}"></script>
     <script src="static/js/creative.min.js"></script>
 
   </body>
-<footer>
-    <script src="{{ url_for('static', filename="js/bind.js") }}"></script>
-</footer>
+
 </html>
