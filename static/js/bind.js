@@ -41,7 +41,7 @@ function showUserMessage(msg){
         $('#msg_input').val('');
 }
 function sayToBot(text){
-    document.getElementById("msg_input").placeholder = "Type your messages here..."
+    document.getElementById("msg_input").placeholder = "Type \"BADBOT\" to redirect to a human"
     $.post("/chat",
             {
                 //csrfmiddlewaretoken:csrf,
