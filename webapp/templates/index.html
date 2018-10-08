@@ -90,8 +90,39 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">About the Project: Comming Soon...</h2>
+            <h2 class="section-heading">About the Project</h2>
             <hr class="my-4">
+            <h3 class="section-heading"> What does it do</h3>
+            <p class="mb-9" align="left">This is a consulting project I built at Insight Data Science. 
+              I was consulting with a travel marketplace startup, 
+              and they wanted me to build a chatbot for their customer service. 
+              <br><br>
+              This chatbot can answer some FAQs regarding a specific product. As the figure below shows,
+              it is able to answer or redirect about 30% of the questions asked from customers.
+              <br><br>
+              For example, you can ask it "Is there any discount for Phantom of Opera", or "Can I get a refund for Wicked".
+              If it cannot understand what specific product you are referring to, it will ask you what product are you looking at.
+              If it cannot answer your question, it will need to redirect you to a human.
+              <img src="../static/img/donut.jpg" style="margin:auto; width:500px;display:block" />
+            </p>
+              
+            <h3 class="section-heading"> How it works</h3> 
+            <p class="mb-9" align="left">In order to make it identify frequently asked questions
+                and realize what specific product the customer is referring to, 
+                I give this chatbot 2 NLU models. A topic understanding model and a product understanding model.
+                <br><br>
+                <img src="../static/img/models.png" style="margin:auto; width:800px;display:block" />
+                <br><br>
+                I used LDA and Achored CorEx topic modeling to find frequently appearing topics from the chat transcripts.
+                <br><br>
+                Here are some examples of the topics:
+                <br><br>
+                <img src="../static/img/topics.png" style="margin:auto; width:800px;display:block" />
+                <br><br>
+                Then I built a random forest classifier to identify the products that the customer is referring to.
+             </p>
+
+
           </div>
         </div>
       </div>
@@ -104,8 +135,13 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">About Me</h2>
             <hr class="my-4">
-            <p class="mb-3">My name is Tianyi Zhang. I am currently a data science fellow at Insight Data Science. I just got my Ph.D. in physical oceanography at the University of South Carolina. My research work focused on numerical modeling and I used machine learning to classify tidal waves.</p>
-            <p class="mb-5">I want to apply my predictive modling skills on data science.</p>
+            <p class="mb-3">My name is Tianyi Zhang. I am currently a data science fellow at Insight Data Science. 
+              I just got my Ph.D. in physical oceanography at the University of South Carolina. 
+              My research work focused on numerical modeling and I used machine learning to classify tidal waves. 
+              I also worked on tidal time series in the South Atlantic to validate my models.</p>
+            <p class="mb-5">During my research I was amazed by how powerful predictive modeling is and enjoyed building and validating the models.
+              Now I want to expand the range of field and apply my modeling skill to make an impact on day to day life.  
+            </p>
           </div>
         </div>
         <div class="row">
