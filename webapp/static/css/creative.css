@@ -131,6 +131,7 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
+    font-size: 30px;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: #fff;
@@ -151,7 +152,7 @@ img::-moz-selection {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #F05F40;
+    color: rgb(0, 0, 0);
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
     color: #f05f40;
@@ -309,4 +310,13 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+#project{
+  background-color: #333333;
+  color: rgb(255, 255, 255);
+}
+
+#aboutme{
+  background-color: #dddddd;
 }
