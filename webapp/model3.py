@@ -3,9 +3,10 @@ import json
 from flask import Flask
 from flask import render_template,jsonify,request
 from werkzeug.contrib.cache import SimpleCache
+from webapp import app
 cache = SimpleCache()
 
-with open('../model/product_db.json', 'r') as fp:
+with open('./model/product_db.json', 'r') as fp:
     product_db = json.load(fp)
 
 
@@ -69,16 +70,14 @@ class preprocess(object):
 
     
 # import product model
-rf = joblib.load('../model/Product_Model.sav')
-le_p = joblib.load('../model/Product_Encoder.sav')
-tv_p = joblib.load('../model/Product_Vectorizer.sav')
+rf = joblib.load('./model/Product_Model.sav')
+le_p = joblib.load('./model/Product_Encoder.sav')
+tv_p = joblib.load('./model/Product_Vectorizer.sav')
 
 # import query model
-nb = joblib.load('../model/Topic_Model.sav')
-tv_q = joblib.load('../model/Topic_Vectorizer.sav')
+nb = joblib.load('./model/Topic_Model.sav')
+tv_q = joblib.load('./model/Topic_Vectorizer.sav')
 
-# create a Flask app instance
-app = Flask(__name__)
 
 @app.route('/')
 
